@@ -1,0 +1,24 @@
+{
+  "name": "aiseewhy",
+  "version": "1.0.0",
+  "description": "Check whether ChatGPT, Claude, Perplexity and Gemini crawlers can reach and read a page, find the firewall or robots.txt rule that blocks them, apply the fix and prove it worked.",
+  "author": {
+    "name": "AISeeWhy",
+    "url": "https://aiseewhy.com"
+  },
+  "homepage": "https://aiseewhy.com/docs/#agents",
+  "repository": "https://github.com/aiseewhy/aiseewhy-plugin",
+  "license": "MIT",
+  "keywords": [
+    "ai-crawlers",
+    "aeo",
+    "geo",
+    "robots-txt",
+    "llms-txt",
+    "gptbot",
+    "claudebot",
+    "perplexitybot",
+    "cloudflare",
+    "seo-audit"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "aiseewhy": {
+      "type": "http",
+      "url": "https://api.aiseewhy.com/mcp",
+      "headers": {
+        "x-api-key": "${AISEEWHY_API_KEY:-}"
+      }
+    }
+  }
+}

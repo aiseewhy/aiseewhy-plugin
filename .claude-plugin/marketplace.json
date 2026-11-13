@@ -1,0 +1,18 @@
+{
+  "name": "aiseewhy",
+  "owner": {
+    "name": "AISeeWhy",
+    "url": "https://aiseewhy.com"
+  },
+  "plugins": [
+    {
+      "name": "aiseewhy",
+      "source": "./plugins/aiseewhy",
+      "description": "Can ChatGPT, Claude and Perplexity read your page? Your agent fetches it as 16 AI crawlers, finds what blocks them, applies the fix and checks again.",
+      "category": "SEO"
+    }
+  ],
+  "metadata": {
+    "description": "AISeeWhy's Claude Code plugin marketplace."
+  }
+}

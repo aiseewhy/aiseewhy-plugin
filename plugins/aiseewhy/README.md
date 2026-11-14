@@ -2,7 +2,7 @@
 
 Can ChatGPT, Claude and Perplexity read your page? This plugin lets your agent find out and fix it.
 
-It connects the hosted AISeeWhy MCP server, which fetches a page as 16 AI and search crawlers next to a real browser, reads robots.txt as RFC 9309 says, and reports what blocks each crawler with a ready-to-paste fix. Five skills guide the agent from the check to a verified fix.
+It connects the hosted AISeeWhy MCP server, which fetches a page as 16 AI and search crawlers next to a real browser, reads robots.txt as RFC 9309 says, and reports what blocks each crawler with a ready-to-paste fix. Five skills guide the agent from the check to a verified fix, and a sixth crawls the whole site for classic SEO problems.
 
 ## What you can ask
 
@@ -11,6 +11,7 @@ It connects the hosted AISeeWhy MCP server, which fetches a page as 16 AI and se
 - "Block AI training but keep us in AI answers. Update robots.txt."
 - "Write an llms.txt for this site."
 - "Audit our sitemap for AI crawlers, compare us with competitor.com and monitor the key pages."
+- "Crawl our site, find broken links and duplicate titles, and fix them in the templates."
 
 ## Included skills
 
@@ -19,10 +20,11 @@ It connects the hosted AISeeWhy MCP server, which fetches a page as 16 AI and se
 - **ai-crawler-policy**: choose which AI crawlers to allow and write robots.txt and Content-Signal
 - **llms-txt**: write or fix /llms.txt from the site's real pages
 - **ai-readiness-report**: sitemap audit, competitor comparison and monitoring in one report (needs a key)
+- **seo-site-audit**: crawl the site for broken links, duplicate titles, orphan pages and sitemap problems, and fix the shared cause (needs a key)
 
 ## API key
 
-Without a key the server gives a free preview: the score, the counts and the first finding. For every finding with its fix, sitemap audits, comparisons and monitoring, create a key in your account at https://aiseewhy.com/account/ (7-day free trial, no card) and set it before starting Claude Code:
+Without a key the server gives a free preview: the score, the counts and the first finding. For every finding with its fix, sitemap audits, site crawls, comparisons and monitoring, create a key in your account at https://aiseewhy.com/account/ (7-day free trial, no card) and set it before starting Claude Code:
 
 ```sh
 export AISEEWHY_API_KEY=asw_…

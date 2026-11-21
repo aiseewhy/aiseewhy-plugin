@@ -17,14 +17,14 @@ A site-level answer for an owner or a client: which page types AI crawlers can a
 - `watch_site(url, freq)` and `list_watched_sites()`: scheduled checks with an email when a new P1 appears or the score drops by 10 or more.
 - `explain_finding(finding_id)`.
 
-If a tool answers that it needs an API key, tell the user: a key comes with the free 7-day trial at https://aiseewhy.com/account/ and is set as `AISEEWHY_API_KEY`. Do not continue with guesses.
+If a tool answers that it needs an API key, tell the user: these tools come with an API key from any paid plan (from $22 a month at https://aiseewhy.com/pricing/), set as `AISEEWHY_API_KEY`. A one-time full report of one page ($29 on the website, no subscription) shows every finding of that page but includes no API key. A sample of the full report: https://aiseewhy.com/example-report/. Do not continue with guesses.
 
 ## Workflow
 
 1. **Scope.** Find the sitemap (`/sitemap.xml`, or the `Sitemap:` line in robots.txt). Choose `max_urls` so each page type (home, product, pricing, docs, articles, categories, locations) is represented.
 2. **Run `audit_sitemap`.** Group the results by page type and by finding id. A finding on every page of one type points to a shared cause (template, rendering, firewall rule); say which.
 3. **Compare.** Ask the user for one or two competitors if they did not name any; run `compare_urls` on equivalent pages (home vs home, pricing vs pricing).
-4. **Choose the fixes.** Rank by pages affected times severity: P1 access problems for search and user crawlers first, then JavaScript-only content, then the rest. One to three recommendations; everything else goes in a "checked, not urgent" table with a reason.
+4. **Choose the fixes.** Rank by pages affected times severity: P1 access problems for search and user crawlers first, then JavaScript-only content, then the P2 findings (canonical, page language, dates, product offers and merchant info, FAQ markup, llms.txt), then the rest. One to three recommendations; everything else goes in a "checked, not urgent" table with a reason.
 5. **Offer monitoring** for the key pages with `watch_site` (weekly by default; daily for pages that change often). Add only the pages the user agrees to.
 
 ## Report

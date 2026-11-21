@@ -1,7 +1,7 @@
 {
   "name": "aiseewhy",
-  "version": "1.1.0",
-  "description": "Check whether ChatGPT, Claude, Perplexity and Gemini crawlers can reach and read a page, find the firewall or robots.txt rule that blocks them, apply the fix and prove it worked. Also crawls the whole site for classic SEO problems.",
+  "version": "1.3.0",
+  "description": "Check whether ChatGPT, Claude, Perplexity and Gemini crawlers can reach and read a page, find the firewall or robots.txt rule that blocks them, apply the fix and prove it worked. Also crawls the whole site for classic SEO problems, and checks product and local business structured data.",
   "author": {
     "name": "AISeeWhy",
     "url": "https://aiseewhy.com"

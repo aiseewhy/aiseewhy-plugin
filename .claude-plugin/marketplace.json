@@ -9,7 +9,8 @@
       "name": "aiseewhy",
       "source": "./plugins/aiseewhy",
       "description": "Can ChatGPT, Claude and Perplexity read your page? Your agent fetches it as 16 AI crawlers, finds what blocks them, applies the fix and checks again.",
-      "category": "SEO"
+      "category": "SEO",
+      "version": "1.3.0"
     }
   ],
   "metadata": {

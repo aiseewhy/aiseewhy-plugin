@@ -7,7 +7,7 @@ description: "Write or fix a site's llms.txt (the llmstxt.org format: a Markdown
 
 ## Goal
 
-A short, accurate `/llms.txt` that points AI assistants to the pages that answer real questions about the site. Be honest with the user about its weight: it is a convenience for assistants and agents, not a ranking factor, and no major AI search crawler has said it relies on it. It never fixes a blocked crawler.
+A short, accurate `/llms.txt` that points AI assistants to the pages that answer real questions about the site. Be honest with the user about its weight: it is a convenience for assistants and agents, not a ranking factor, and no major AI search crawler has said it relies on it. It never fixes a blocked crawler. Since the engine review of 2026-11-20 the audit reports a missing llms.txt (`llms.missing`) as P2, because assistants and agents use it to find a site's key pages; that is a priority for the to-do list, not a claim that it moves rankings. Access problems (P1) always come first.
 
 ## Format (llmstxt.org)
 

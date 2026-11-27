@@ -14,7 +14,7 @@ Markup that says the same as the page, complete enough for shopping results, map
 - `audit_url(url, language)`: reads the server's HTML (what crawlers without JavaScript read) and reports the findings below with the evidence and a JSON-LD skeleton to fill.
 - `explain_finding(finding_id, language)`: what a finding means and how to fix it.
 
-Without a paid plan `audit_url` shows the costliest finding in full and the rest only by priority. Every finding with its fix comes with a paid plan (from $22 a month at https://aiseewhy.com/pricing/, its API key set as `AISEEWHY_API_KEY`) or a one-time full report of the page ($29 on the website, no subscription). A sample of the full report: https://aiseewhy.com/example-report/. Never invent the hidden findings.
+Without a paid plan `audit_url` shows the costliest finding in full and the rest only by priority. Every finding with its fix comes with a paid plan (from $22 a month at https://aiseewhy.com/pricing/?utm_source=plugin&utm_medium=integration&utm_campaign=store-structured-data, its API key set as `AISEEWHY_API_KEY`) or a one-time full report of the page ($29 on the website, no subscription). A sample of the full report: https://aiseewhy.com/example-report/?utm_source=plugin&utm_medium=integration&utm_campaign=store-structured-data. Never invent the hidden findings.
 
 ## What the audit checks
 

@@ -1,6 +1,6 @@
 ---
 name: ai-crawler-audit
-description: "Check whether ChatGPT, Claude, Perplexity, Gemini and other AI crawlers can reach and read a web page, then explain in plain words what blocks them and the one to three fixes that matter most. Use when someone asks whether AI can see, read or cite their site or page."
+description: "Check whether ChatGPT, Claude, Perplexity, Gemini and other AI crawlers can reach and read a web page with the AISeeWhy MCP tools (audit_url, show_ai_crawler_check), then explain in plain words what blocks them and the one to three fixes that matter most. Use when someone asks whether AI can see, read or cite their site or page and the AISeeWhy MCP server is connected; without it, or for a local check, use aiseewhy-audit."
 ---
 
 # AI crawler audit
@@ -15,7 +15,7 @@ Answer one question for a real page: can the crawlers behind AI answers reach it
 - `show_ai_crawler_check(url, language)`: the same check and limits as `audit_url`, shown as a visual card in apps that render MCP Apps (Claude Desktop, ChatGPT): the score ring, which AI crawlers are let in or blocked, the costliest finding with its fix and the locked findings by priority. Clients without cards get the same Markdown as `audit_url`. In Claude Code use `audit_url`; use the card when the user is in an app that shows it and wants the result at a glance.
 - `explain_finding(finding_id, language)`: what a finding means, why it matters, how to fix it. Use it for any finding id you are unsure about instead of guessing.
 
-Without a paid plan `audit_url` returns a preview: the score, the counts, the crawler table and the costliest finding in full (a P1 about an AI search or assistant crawler first, then any other P1, then P2, then P3); the other findings show only their priority. Work with that, say plainly that the other findings are hidden, and tell the user that every finding with its fix comes with a paid plan (from $22 a month at https://aiseewhy.com/pricing/, its API key set as `AISEEWHY_API_KEY`) or a one-time full report of the page ($29 on the website, no subscription). A sample of the full report: https://aiseewhy.com/example-report/. Never invent the hidden findings.
+Without a paid plan `audit_url` returns a preview: the score, the counts, the crawler table and the costliest finding in full (a P1 about an AI search or assistant crawler first, then any other P1, then P2, then P3); the other findings show only their priority. Work with that, say plainly that the other findings are hidden, and tell the user that every finding with its fix comes with a paid plan (from $22 a month at https://aiseewhy.com/pricing/?utm_source=plugin&utm_medium=integration&utm_campaign=ai-crawler-audit, its API key set as `AISEEWHY_API_KEY`) or a one-time full report of the page ($29 on the website, no subscription). A sample of the full report: https://aiseewhy.com/example-report/?utm_source=plugin&utm_medium=integration&utm_campaign=ai-crawler-audit. Never invent the hidden findings.
 
 ## Priorities (engine review of 2026-11-20)
 
@@ -25,7 +25,7 @@ Without a paid plan `audit_url` returns a preview: the score, the counts, the cr
 
 Older reports or notes may list some of these P2 findings as P3; go by the priority in the current report.
 
-If the AISeeWhy tools are not available, say so and stop; do not imitate the audit with generic advice.
+If the AISeeWhy tools are not available, say so and switch to the `aiseewhy-audit` skill: it calls the public API or runs a bundled local read-only check (`scripts/local_check.py`) and says which mode produced the result. Do not imitate the audit with generic advice.
 
 ## Workflow
 

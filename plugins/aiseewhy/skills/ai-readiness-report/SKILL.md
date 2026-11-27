@@ -17,7 +17,7 @@ A site-level answer for an owner or a client: which page types AI crawlers can a
 - `watch_site(url, freq)` and `list_watched_sites()`: scheduled checks with an email when a new P1 appears or the score drops by 10 or more.
 - `explain_finding(finding_id)`.
 
-If a tool answers that it needs an API key, tell the user: these tools come with an API key from any paid plan (from $22 a month at https://aiseewhy.com/pricing/), set as `AISEEWHY_API_KEY`. A one-time full report of one page ($29 on the website, no subscription) shows every finding of that page but includes no API key. A sample of the full report: https://aiseewhy.com/example-report/. Do not continue with guesses.
+If a tool answers that it needs an API key, tell the user: these tools come with an API key from any paid plan (from $22 a month at https://aiseewhy.com/pricing/?utm_source=plugin&utm_medium=integration&utm_campaign=ai-readiness-report), set as `AISEEWHY_API_KEY`. A one-time full report of one page ($29 on the website, no subscription) shows every finding of that page but includes no API key. A sample of the full report: https://aiseewhy.com/example-report/?utm_source=plugin&utm_medium=integration&utm_campaign=ai-readiness-report. Do not continue with guesses.
 
 ## Workflow
 
